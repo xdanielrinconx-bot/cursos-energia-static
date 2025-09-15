@@ -69,9 +69,9 @@
       { 
         title: "Contexto y Demanda de Metales", 
         content: `
-          <p>La minería submarina surge como respuesta a la creciente <strong>demanda global de minerales críticos</strong> como el cobalto, níquel, cobre y manganeso.</p>
-          <p>Estos metales son esenciales para la transición energética (vehículos eléctricos, baterías, turbinas eólicas, paneles solares).</p>
-          <p>La minería terrestre enfrenta limitaciones ambientales y sociales, lo cual impulsa la búsqueda de alternativas en el mar profundo.</p>
+          <p>En los últimos 50 años, la población mundial se ha duplicado y la extracción de materiales se ha triplicado. Este crecimiento está impulsado por la expansión de la clase media y la urbanización global.</p>
+          <p>La transición energética hacia tecnologías limpias exige cantidades masivas de <strong>níquel, cobalto, cobre y manganeso</strong> para baterías de vehículos eléctricos, turbinas eólicas y paneles solares.</p>
+          <p>Las reservas terrestres son limitadas y decrecientes en calidad, lo que impulsa la exploración del fondo marino como alternativa.</p>
           <img src="assets/contexto.jpg" alt="Contexto y demanda" class="rounded-lg shadow-md mt-4">
           <p class="mt-2 text-sm text-gray-500">Figura 1: Creciente demanda de minerales estratégicos para la transición energética.</p>
         `
@@ -82,30 +82,97 @@
           <p>Existen tres categorías principales de minerales submarinos:</p>
           <ul class="list-disc pl-6 space-y-2">
             <li><strong>Nódulos polimetálicos:</strong> ricos en manganeso, cobre, níquel y cobalto. Ubicados principalmente en la <em>Zona Clarion-Clipperton</em> del Pacífico.</li>
-            <li><strong>Sulfatos masivos marinos:</strong> depósitos que se forman en zonas hidrotermales activas en las dorsales oceánicas.</li>
-            <li><strong>Costras de ferromanganeso:</strong> ubicadas en montes submarinos, con alto contenido en cobalto y otros metales estratégicos.</li>
+            <li><strong>Sulfuros masivos marinos:</strong> depósitos en chimeneas hidrotermales, con cobre, zinc, oro y plata.</li>
+            <li><strong>Costras de ferromanganeso:</strong> formaciones en montes submarinos con alto contenido en cobalto.</li>
           </ul>
-          <img src="assets/minerales.png" alt="Tipos de minerales submarinos" class="rounded-lg shadow-md mt-4">
+          <p>Estos minerales representan un suministro más diversificado y potencialmente menos dañino que las fuentes terrestres, siempre que se gestione adecuadamente.</p>
+          <img src="assets/minerales.jpg" alt="Tipos de minerales submarinos" class="rounded-lg shadow-md mt-4">
           <p class="mt-2 text-sm text-gray-500">Figura 2: Diferentes formaciones de minerales en el fondo marino.</p>
         `
       },
       { 
         title: "Tecnología Offshore", 
         content: `
-          <p>La <strong>tecnología offshore</strong> es clave para la extracción de minerales del fondo marino:</p>
+          <p>La <strong>tecnología offshore</strong> permite la recolección en profundidades de hasta 5000 m:</p>
           <ul class="list-disc pl-6 space-y-2">
-            <li>Unidades recolectoras (harvesters) que raspan y succionan los nódulos polimetálicos.</li>
-            <li>Sistemas de transporte vertical para llevar los nódulos desde el fondo hasta la superficie.</li>
-            <li>Buques de superficie especializados en operaciones en alta mar.</li>
+            <li>Recolectores hidráulicos montados en chasis con orugas (ejemplo: <em>Patania II</em>).</li>
+            <li>Sistemas de transporte vertical (riser) con bombas que elevan nódulos a la superficie.</li>
+            <li>Buques especializados con capacidad para transferir nódulos a graneleros.</li>
           </ul>
+          <img src="assets/mineria-contexto.png" alt="Tecnología offshore" class="rounded-lg shadow-md mt-4">
+          <p class="mt-2 text-sm text-gray-500">Figura 3: Prototipo recolector operando en la Zona Clarion-Clipperton.</p>
         `
       },
-      { title: "Tecnología Onshore", content: "Procesamiento de nódulos en tierra: hidrometalurgia vs pirometalurgia." },
-      { title: "Estudios Ambientales y Financiamiento", content: "Impactos ambientales, riesgos y capital necesario." },
-      { title: "Principios Legales", content: "Incluye 'Patrimonio Común de la Humanidad' y protección del medio marino." },
-      { title: "Autoridad Internacional de los Fondos Marinos (ISA)", content: "Funciones y procedimientos de la ISA." },
-      { title: "Tendencias Regulatorias y Desafíos", content: "Ausencia de regulación para explotación, protestas de ONGs, riesgos económicos." },
-      { title: "Caso Práctico: Denegación de Plan", content: "Caso sobre la denegación de un plan de trabajo por parte de la ISA." }
+      { 
+        title: "Tecnología Onshore", 
+        content: `
+          <p>Una vez en tierra, los nódulos se procesan para extraer metales estratégicos.</p>
+          <p>Los enfoques principales son:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Hidrometalurgia:</strong> lixiviación selectiva con reactivos para separar metales clave (Cu, Ni, Co).</li>
+            <li><strong>Pirometalurgia:</strong> hornos de arco eléctrico para producir aleaciones ricas en metales.</li>
+          </ul>
+          <p>La hidrometalurgia es actualmente la preferida por su menor impacto ambiental y mayor eficiencia.</p>
+        `
+      },
+      { 
+        title: "Estudios Ambientales y Financiamiento", 
+        content: `
+          <p>Los estudios ambientales son críticos para la viabilidad:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Pérdida de hábitat y biodiversidad en ecosistemas de aguas profundas.</li>
+            <li>Plumas de sedimentos y posibles impactos en cadenas tróficas.</li>
+            <li>Contaminación acústica y conflictos con áreas marinas protegidas.</li>
+          </ul>
+          <p>Los costos de estudios de línea base pueden superar los USD 90 millones, principalmente en buques y ROVs.</p>
+          <p>El financiamiento de proyectos de este tipo suele depender de consorcios internacionales y de un entorno regulatorio claro que reduzca los riesgos de inversión.</p>
+        `
+      },
+      { 
+        title: "Principios Legales", 
+        content: `
+          <p>El marco legal de la minería submarina está basado en la <strong>Convención de las Naciones Unidas sobre el Derecho del Mar (UNCLOS)</strong>:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Los recursos del Área son <strong>Patrimonio Común de la Humanidad</strong>.</li>
+            <li>Prohibición de apropiación soberana de los fondos marinos.</li>
+            <li>Obligación de proteger el medio ambiente marino.</li>
+          </ul>
+          <p>Estos principios buscan equilibrar el acceso a los recursos con la protección ambiental y la equidad internacional.</p>
+        `
+      },
+      { 
+        title: "Autoridad Internacional de los Fondos Marinos (ISA)", 
+        content: `
+          <p>La <strong>ISA</strong> es la organización encargada de regular la exploración y explotación en áreas fuera de la jurisdicción nacional.</p>
+          <p>Sus funciones principales incluyen:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Otorgar contratos de exploración y, en el futuro, de explotación.</li>
+            <li>Desarrollar regulaciones técnicas y ambientales.</li>
+            <li>Velar por que los beneficios se distribuyan equitativamente.</li>
+          </ul>
+          <p>Actualmente ha firmado más de 30 contratos de exploración con Estados y empresas patrocinadas.</p>
+        `
+      },
+      { 
+        title: "Tendencias Regulatorias y Desafíos", 
+        content: `
+          <p>Las regulaciones de explotación aún están en desarrollo. Existen varios desafíos:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Presión de países y empresas para iniciar la explotación.</li>
+            <li>ONGs y científicos piden una moratoria hasta conocer los impactos ambientales.</li>
+            <li>La incertidumbre regulatoria genera riesgos financieros y retrasa inversiones.</li>
+          </ul>
+          <p>El debate central está entre avanzar en la explotación o esperar más evidencia científica.</p>
+        `
+      },
+      { 
+        title: "Caso Práctico: Denegación de Plan", 
+        content: `
+          <p>Ejemplo práctico de cómo la ISA puede denegar un plan de trabajo:</p>
+          <p>Una empresa solicitó autorización para un plan de exploración, pero fue rechazado por falta de datos ambientales adecuados y ausencia de un plan de manejo de plumas de sedimentos.</p>
+          <p>Este caso refleja la importancia de cumplir rigurosamente con los estándares ambientales y técnicos establecidos por la ISA.</p>
+        `
+      }
     ];
 
     // ----- State Management -----
