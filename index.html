@@ -33,6 +33,16 @@
     .btn-secondary:hover {
       background-color: #d1d5db;
     }
+    .progress-bar {
+      height: 8px;
+      background-color: #d1d5db;
+      border-radius: 4px;
+    }
+    .progress {
+      height: 100%;
+      background-color: #2563eb;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body class="text-gray-800">
@@ -48,11 +58,31 @@
       <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
         Cursos especializados para abogados y profesionales que buscan dominar los desafíos legales y contractuales en el sector energético global.
       </p>
+      <div class="max-w-xl mx-auto flex">
+        <input type="text" placeholder="Buscar cursos por tema o palabra clave..."
+          class="w-full px-5 py-3 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded-r-full hover-shine font-semibold transition-colors">
+          Buscar
+        </button>
+      </div>
     </header>
 
     <!-- Course Catalog Section -->
     <section id="cursos" class="mb-16">
       <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Nuestro Catálogo de Cursos</h3>
+
+      <!-- Filters -->
+      <div class="bg-white p-6 rounded-xl card-shadow mb-8">
+        <h4 class="text-xl font-semibold mb-4">Filtrar por:</h4>
+        <div class="flex flex-wrap items-center gap-4 text-sm md:text-base">
+          <span class="font-medium text-gray-700">Tópico:</span>
+          <button class="btn-secondary px-4 py-2 rounded-full">Minería</button>
+          <button class="btn-secondary px-4 py-2 rounded-full">Renovable</button>
+          <button class="btn-secondary px-4 py-2 rounded-full">Contratos</button>
+          <button class="btn-secondary px-4 py-2 rounded-full">Nuclear</button>
+        </div>
+      </div>
 
       <!-- Course Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -60,11 +90,11 @@
         <!-- Course Card: Minería Submarina -->
         <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
           <h4 class="text-xl font-bold text-gray-900 mb-2">Minería Submarina: Aspectos Legales y Regulatorios</h4>
-          <p class="text-gray-500 mb-4 text-sm">
-            Explora el marco jurídico y los desafíos de la minería de aguas profundas.
-          </p>
-          <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-4">Destacado</span>
-          <a href="mineria.html" class="block w-full text-center py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine">
+          <p class="text-gray-500 mb-4 text-sm">Explora el marco jurídico y los desafíos de la minería de aguas profundas.</p>
+          <span
+            class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-4">Destacado</span>
+          <a href="mineria.html"
+            class="block w-full text-center py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine">
             Ver Detalles
           </a>
         </div>
@@ -72,10 +102,79 @@
         <!-- Course Card: Comunidades Energéticas -->
         <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
           <h4 class="text-xl font-bold text-gray-900 mb-2">Derecho de las Comunidades Energéticas Globales</h4>
-          <p class="text-gray-500 mb-4 text-sm">
-            Analiza la regulación y los modelos de gobernanza de proyectos energéticos a escala global.
-          </p>
-          <button class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+          <p class="text-gray-500 mb-4 text-sm">Analiza la regulación y los modelos de gobernanza de proyectos energéticos a escala global.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: ESG Eólica Offshore -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Implicaciones ESG de la Energía Eólica Offshore</h4>
+          <p class="text-gray-500 mb-4 text-sm">Un análisis legal de los factores ambientales, sociales y de gobernanza en la planificación y operación de proyectos eólicos marinos.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: Minerales Estratégicos -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Regulación de Minerales Estratégicos y su Impacto Legal</h4>
+          <p class="text-gray-500 mb-4 text-sm">Profundiza en la regulación del comercio y la extracción de minerales críticos.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: Eólica Offshore -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Energía Eólica Offshore: Régimen Jurídico y Contratación</h4>
+          <p class="text-gray-500 mb-4 text-sm">Examina los contratos y el marco legal que rigen la industria de la energía eólica marina.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: Contratos Internacionales -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Contratos Internacionales para Infraestructura Energética</h4>
+          <p class="text-gray-500 mb-4 text-sm">Un análisis detallado de los contratos de construcción y operación de proyectos energéticos a gran escala.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: Captura de Carbono -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Marco Legal de la Captura y Almacenamiento de Carbono</h4>
+          <p class="text-gray-500 mb-4 text-sm">Conoce los aspectos regulatorios y los incentivos legales para los proyectos de captura y utilización de carbono.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: Energía Nuclear -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Aspectos Jurídicos de la Energía Nuclear</h4>
+          <p class="text-gray-500 mb-4 text-sm">Explora el complejo régimen legal de la energía nuclear, incluyendo seguridad, responsabilidad civil y desmantelamiento.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
+            Ver Detalles
+          </button>
+        </div>
+
+        <!-- Course Card: Reactores Modulares -->
+        <div class="bg-white p-6 rounded-xl card-shadow hover-lift">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">Regulación y Aspectos Legales de los Reactores Nucleares Modulares</h4>
+          <p class="text-gray-500 mb-4 text-sm">Un vistazo a los desafíos regulatorios y las oportunidades legales que presentan los reactores modulares.</p>
+          <button
+            class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover-shine transition-colors duration-300">
             Ver Detalles
           </button>
         </div>
