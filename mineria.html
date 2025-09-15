@@ -3,93 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minería Submarina - Detalles del Curso</title>
+  <title>Minería Submarina - Curso</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+      background: #f3f4f6;
       color: #333;
-    }
-    .card-shadow {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08),
-                  0 4px 6px -2px rgba(0, 0, 0, 0.04);
-    }
-    .hover-shine:hover {
-      background-color: #1d4ed8;
-      transition: background-color 0.3s ease-in-out;
     }
   </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-gray-100">
 
-  <div class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto">
-
-    <!-- Back to catalog -->
-    <a href="index.html" class="text-blue-600 font-medium mb-6 inline-block">&lt; Volver al Catálogo</a>
-
-    <!-- Course Details -->
-    <section class="bg-white p-6 md:p-10 rounded-xl card-shadow">
-      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Minería Submarina: Aspectos Legales y Regulatorios
-      </h3>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <div>
-          <p class="mb-6 text-gray-700 leading-relaxed">
-            La minería de aguas profundas (MAD) o minería submarina, es la exploración y explotación de minerales de alta ley a una profundidad superior a los 200 metros, en áreas marinas nacionales e internacionales.
-          </p>
-          <p class="mb-6 text-gray-700 leading-relaxed">
-            Esta industria incipiente enfrenta desafíos significativos, desde la necesidad de tecnologías innovadoras hasta la falta de un marco legal internacional consolidado que aborde el impacto ambiental y social.
-          </p>
-          <div class="bg-gray-100 p-4 rounded-lg mb-6">
-            <p class="font-semibold text-gray-800">Instructor: Daniel Rincón</p>
-            <p class="text-sm text-gray-600">Abogado con un máster (LLM) en Derecho Energético y Ambiental de la Universidad de Lovaina, Bélgica.</p>
-          </div>
-          <div class="flex items-center space-x-4 mb-6 text-sm text-gray-600">
-            <span>Duración: 12 horas</span>
-            <span>Certificación: Sí</span>
-            <span>Dificultad: Avanzado</span>
-          </div>
-          <button class="w-full py-3 px-6 bg-blue-600 text-white rounded-lg font-semibold text-lg hover-shine">
-            Inscribirse Ahora
-          </button>
-        </div>
-        <div>
-          <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Minería+Submarina"
-               alt="Minería Submarina"
-               class="w-full h-auto rounded-lg shadow-lg" />
-        </div>
-      </div>
-
-      <div class="mt-10">
-        <h5 class="text-2xl font-bold text-gray-900 mb-4">Contenido del Curso</h5>
-        <ul class="space-y-6">
-          <li class="bg-gray-50 p-4 rounded-lg">
-            <p class="font-semibold text-gray-900">Módulo I: Nociones Técnicas</p>
-            <p class="text-gray-600 text-sm mt-1">Introducción, panorama global y diferentes tipos de minerales. Explora la tecnología offshore y onshore y los desafíos técnicos de la industria.</p>
-          </li>
-          <li class="bg-gray-50 p-4 rounded-lg">
-            <p class="font-semibold text-gray-900">Módulo II: Marco Legal y Regulatorio</p>
-            <p class="text-gray-600 text-sm mt-1">Análisis de la CONVEMAR, la ISA y los procedimientos de licencias y contratos. Se revisan los desarrollos históricos y la legislación nacional.</p>
-          </li>
-          <li class="bg-gray-50 p-4 rounded-lg">
-            <p class="font-semibold text-gray-900">Módulo III: Desafíos Legales y Caso Práctico</p>
-            <p class="text-gray-600 text-sm mt-1">Examina las tendencias regulatorias, riesgos económicos y la influencia de ONG. El módulo concluye con un caso práctico.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- Navbar -->
+  <div class="flex justify-center w-full py-4 bg-white shadow-md space-x-4">
+    <a href="index.html" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300">Inicio</a>
+    <a href="index.html" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300">Catálogo</a>
   </div>
 
-  <footer class="bg-gray-800 text-white py-6 mt-12">
-    <div class="max-w-7xl mx-auto text-center px-4">
-      <p class="text-sm">&copy; 2024 EnergíaLegal.com. Todos los derechos reservados.</p>
+  <!-- Main Container -->
+  <div class="bg-gray-100 min-h-screen p-8" id="app">
+    <div class="bg-white shadow-xl rounded-lg p-8 w-full max-w-5xl mx-auto space-y-8">
+
+      <!-- Title & Description -->
+      <h1 class="text-3xl font-bold text-center text-gray-800">Minería Submarina: Desarrollos Internacionales</h1>
+      <p class="text-center text-gray-600">
+        Un curso completo sobre la minería submarina, su contexto, tecnologías y marco legal.
+      </p>
+
+      <!-- Layout -->
+      <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+
+        <!-- Lessons Sidebar -->
+        <div class="w-full md:w-1/3 bg-gray-50 p-4 rounded-lg shadow-inner overflow-y-auto max-h-[500px]">
+          <h2 class="text-xl font-semibold mb-4 text-gray-700">Lecciones del Curso</h2>
+          <ul id="lesson-list" class="space-y-2"></ul>
+        </div>
+
+        <!-- Lesson Content -->
+        <div class="w-full md:w-2/3 space-y-4">
+          <div class="bg-white p-6 rounded-lg shadow-lg min-h-[300px]">
+            <h2 id="lesson-title" class="text-2xl font-bold mb-4 text-gray-800">Seleccione una lección</h2>
+            <p id="lesson-content" class="text-gray-700">Haz clic en una lección de la izquierda para ver el contenido.</p>
+          </div>
+          <div class="flex justify-between items-center">
+            <button id="complete-btn"
+              class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-200 ease-in-out shadow-lg transform hover:scale-105 hidden">
+              Marcar como Completada
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Message -->
+      <div id="message" class="mt-4 p-4 text-sm text-green-700 bg-green-100 rounded-lg shadow-md text-center hidden"></div>
+
     </div>
-  </footer>
+  </div>
+
+  <script>
+    // ----- Course Data -----
+    const lessons = [
+      { title: "Contexto y Demanda de Metales", content: "El curso explora por qué la minería submarina es relevante en el contexto de la creciente demanda de minerales críticos y los desafíos de la minería terrestre." },
+      { title: "Tipos de Minerales y Ubicación", content: "Descripción de los nódulos polimetálicos, sulfatos masivos marinos y costras de ferromanganeso, y su ubicación geográfica." },
+      { title: "Recuento Histórico", content: "Un recuento de los descubrimientos y el interés comercial en la minería submarina desde 1868 hasta la actualidad." },
+      { title: "Componentes de un Proyecto", content: "Un proyecto de minería en el fondo marino incluye identificación de recursos, tecnología offshore/onshore, estudios ambientales y financiamiento." },
+      { title: "Tecnología Offshore", content: "Incluye recolectores (harvesters), transporte vertical, buques de superficie y transporte a granel." },
+      { title: "Tecnología Onshore", content: "Procesamiento de nódulos en tierra: hidrometalurgia vs pirometalurgia." },
+      { title: "Estudios Ambientales y Financiamiento", content: "Impactos ambientales, riesgos y capital necesario." },
+      { title: "Principios Legales", content: "Incluye 'Patrimonio Común de la Humanidad' y protección del medio marino." },
+      { title: "Autoridad Internacional de los Fondos Marinos (ISA)", content: "Funciones y procedimientos de la ISA." },
+      { title: "Tendencias Regulatorias y Desafíos", content: "Ausencia de regulación para explotación, protestas de ONGs, riesgos económicos." },
+      { title: "Caso Práctico: Denegación de Plan", content: "Caso sobre la denegación de un plan de trabajo por parte de la ISA." }
+    ];
+
+    // ----- State Management -----
+    let activeLesson = null;
+    let completedLessons = JSON.parse(localStorage.getItem("completedLessons") || "[]");
+
+    const lessonList = document.getElementById("lesson-list");
+    const lessonTitle = document.getElementById("lesson-title");
+    const lessonContent = document.getElementById("lesson-content");
+    const completeBtn = document.getElementById("complete-btn");
+    const messageBox = document.getElementById("message");
+
+    // Render lesson list
+    function renderLessons() {
+      lessonList.innerHTML = "";
+      lessons.forEach((lesson, index) => {
+        const li = document.createElement("li");
+        li.className =
+          "p-3 rounded-lg cursor-pointer transition-colors duration-200 flex justify-between items-center " +
+          (activeLesson === index ? "bg-blue-600 text-white shadow-md" : "bg-white hover:bg-gray-200 text-gray-800");
+        li.innerHTML = `<span>${index + 1}. ${lesson.title}</span>` +
+          (completedLessons.includes(lesson.title)
+            ? '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>'
+            : "");
+        li.onclick = () => selectLesson(index);
+        lessonList.appendChild(li);
+      });
+    }
+
+    // Select a lesson
+    function selectLesson(index) {
+      activeLesson = index;
+      lessonTitle.textContent = lessons[index].title;
+      lessonContent.textContent = lessons[index].content;
+      completeBtn.classList.remove("hidden");
+      renderLessons();
+    }
+
+    // Mark lesson as completed
+    function completeLesson() {
+      if (activeLesson !== null) {
+        const lessonTitleText = lessons[activeLesson].title;
+        if (!completedLessons.includes(lessonTitleText)) {
+          completedLessons.push(lessonTitleText);
+          localStorage.setItem("completedLessons", JSON.stringify(completedLessons));
+        }
+        messageBox.textContent = `¡Lección "${lessonTitleText}" marcada como completada!`;
+        messageBox.classList.remove("hidden");
+        renderLessons();
+      }
+    }
+
+    // Event Listeners
+    completeBtn.addEventListener("click", completeLesson);
+
+    // Init
+    renderLessons();
+  </script>
 
 </body>
 </html>
